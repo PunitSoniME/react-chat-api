@@ -19,7 +19,7 @@ io.on("connection", (socket) => {
 
     socket.on("add-user", (username) => {
         io.emit("on-user-add", {
-            username: null, message: `New user ${username} has joined this chat`, type: "new-user"
+            username: null, message: `${username} has joined this chat`, type: "new-user"
         })
     });
 
